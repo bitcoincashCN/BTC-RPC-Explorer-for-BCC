@@ -1,7 +1,7 @@
 module.exports = {
 	cookiePassword: "0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
 	demoSite: false,
-	coin: "BTCC",
+	coin: "BCC",
 
 	rpcBlacklist:[
 	        "getblockchaininfo",
@@ -38,8 +38,8 @@ module.exports = {
 	ipWhitelistForRpcCommands:/^(127\.0\.0\.1)?(\:\:1)?$/,
 
 	donationAddresses:{
-		coins:["BTCC"],
+		coins:["BCC"],
 		
-		"BTCC":{address:"15SghANf14BiH6MDV7ZikD8jmjBkWwYq7e", urlPrefix:"clashic:"}
+		"BCC":{address:"3JKJPzsPmc1ZvnR7nUSwE8ZEkFwoCxgLet", urlPrefix:"BCC:"}
 	},
 };
