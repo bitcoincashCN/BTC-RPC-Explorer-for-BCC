@@ -2,7 +2,7 @@ var Decimal = require("decimal.js");
 Decimal8 = Decimal.clone({ precision:8, rounding:8 });
 
 function postForkBlockReward(blockHeight) {
-  var eras = [ new Decimal8(50 / 10) ];
+  var eras = [ new Decimal8(50 / 1) ];
   for (var i = 1; i < 34; i++) {
     var previous = eras[i - 1];
     eras.push(new Decimal8(previous).dividedBy(2));
@@ -13,25 +13,25 @@ function postForkBlockReward(blockHeight) {
 }
 
 module.exports = {
-	name:"BitcoinCore",
+	name:"BitcoinCash Classic",
 	logoUrl:"/img/logo/btcc.png",
-	siteTitle:"BitcoinCore (BTCC) Explorer",
-	siteDescriptionHtml:"<b>BTCC Explorer</b> is <a href='https://github.com/janoside/btc-rpc-explorer). If you run your own [Bitcoin Full Node](https://bitcoin.org/en/full-node), **BTC Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/janoside/btc-rpc-explorer) for a list of features and instructions for running.",
-	nodeTitle:"BitcoinCore Full Node",
+	siteTitle:"BitcoinCore (BCC) Explorer",
+	siteDescriptionHtml:"<b>BCC Explorer</b> is <a href='https://github.com/janoside/btc-rpc-explorer). If you run your own [Bitcoin Full Node](https://bitcoin.org/en/full-node), **BTC Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/janoside/btc-rpc-explorer) for a list of features and instructions for running.",
+	nodeTitle:"BitcoinCash Calssic Full Node",
 	nodeUrl:"https://github.com/bitcoin-cored/bitcoin-cored",
 	demoSiteUrl: "https://btc.chaintools.io",
 	currencyUnits:[
 		{
-			name:"BTCC",
+			name:"BCC",
 			multiplier:1,
 			default:true,
-			values:["", "btcc", "BTCC"],
+			values:["", "bcc", "BCC"],
 			decimalPlaces:8
 		},
 		{
-			name:"mBTCC",
+			name:"mBCC",
 			multiplier:1000,
-			values:["mbtcc"],
+			values:["mbcc"],
 			decimalPlaces:5
 		},
 		{
